@@ -14,4 +14,4 @@ class Ball:
         self.x += self.speed * math.sin(math.radians(self.angle))
         
     def deneme(self):
-        print('hello')
+        print(f'Speed is {self.speed}, Angle is {self.angle}')
