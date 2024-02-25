@@ -6,12 +6,14 @@ class Ball:
     def __init__(self,x,y): 
         self.x = x 
         self.y = y 
-        self.speed = 0 
+        self.xSpeed = 0
+        self.ySpeed = 0
         self.angle = 0 
+        self.radius = 15
 
     def update(self): 
-        self.y += self.speed * math.sin(math.radians(self.angle))
-        self.x += self.speed * math.sin(math.radians(self.angle))
-        
-    def deneme(self):
-        print(f'Speed is {self.speed}, Angle is {self.angle}')
+        self.x += self.xSpeed * math.cos(math.radians(self.angle))
+        self.y += self.ySpeed * math.sin(math.radians(self.angle))
+ 
+
+    
